@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "visible": true,
+            "category": "Project",
+            "title": "IdleScape",
+            "description": "IdleScape is a Full-Stack application and my final project for the Covalence bootcamp.",
+            "tags": ["MongoDB", "Express", "React", "Redux", "Typescript", "NodeJS"],
+            "isProject": true,
+            "image": {
+                "src": "https://ejm-dev.com/Assets/ProjectCardScreenCaps/IdleScape.PNG",
+                "alt": "Idlescape Welcome Screen",
+                "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+            },
+            "links": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/emoran0403/Idle-Game",
+                    "label": "Github"
+                },
+                {
+                    "type": "external",
+                    "url": "https://ejmdev-idlescape.herokuapp.com/",
+                    "label": "external demo page"
+                },
+                {
+                    "type": "external",
+                    "url": "https://ejmdev-idlescape.herokuapp.com/details",
+                    "label": "internal details page"
+                }
+            ]
+        },
+        {
+            "visible": true,
+            "category": "🧰 EXTENDABLE LAYOUT",
+            "title": "Add more sections!",
+            "isProject": false,
+            "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+            "tags": ["Custom Sections", "Easy-2-Use"],
+            "image": {
+                "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+                "alt": "Extendable Layout"
+            },
+            "links": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme",
+                    "label": "internal details page"
+                }
+            ]
+        }
+    ],
+    "button": {
+        "visible": true,
+        "label": "Visit on Github",
+        "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    }
+}
