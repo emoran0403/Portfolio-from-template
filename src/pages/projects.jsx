@@ -4,14 +4,14 @@ import { Page } from "../../components/PageLayoutWithoutFooter";
 import { ProjectsSection } from "../../components/ProjectsSection";
 
 const Projects = () => {
-    return (
-        <>
-            <Seo title="Muh projectz" />
-            <Page>
-                <ProjectsSection heading="My projects" />
-            </Page>
-        </>
-    );
+  return (
+    <>
+      <Seo title="My projects" />
+      <Page>
+        <ProjectsSection heading="My projects" />
+      </Page>
+    </>
+  );
 };
 
 export default Projects;
