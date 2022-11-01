@@ -8,8 +8,8 @@ export default function IndexPage() {
       <Seo title="Gatsby Starter for Portfolio Minimal" />
       <Page>
         <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId="articles" heading="Latest Articles" sources={["Medium"]} />
-        <InterestsSection sectionId="details" heading="Details" />
+        <ArticlesSection sectionId="articles" heading="Latest Posts" sources={["Medium"]} />
+        {/* <InterestsSection sectionId="details" heading="Details" /> */}
         <ContactSection sectionId="github" heading="Interested?" />
       </Page>
     </>
