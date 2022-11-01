@@ -1,6 +1,6 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageSrc: "../../images/profile-picture.jpg"
+imageAlt: "Eric Moran Profile Picture"
 ---
 
 Hello! I'm Eric Moran
@@ -13,4 +13,4 @@ This project won't change the world, but it changed their world - and they absol
 
 When I'm not coding, I enjoy baking, going outdoors, and gaming. My most delicious recipes are vegan banana bread and vegan pumpkin bread. My mother routinely sells out of these at her shop. Asheville NC has no lack of hiking trails or scenic views. I've heard you can hike one a day and still have new trails after a year. My favorite spots (so far) are Black Balsam Knob and Bearwallow Mountain. Waldeinsamkeit is an accurate description of the feeling you get when you reach the top and take in the view. I've recently been playing modded minecraft on a server with friends; it has been a great way to stay connected when we're all in different states. When I'm feeling a little more competitive, I'll hop on Master Chief Collection and do some games of big team on Halo 4.
 
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+Photo by <a href="mailto:alexakleahy@gmail.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Alexa Leahy</u></a>
