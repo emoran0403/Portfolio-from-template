@@ -15,6 +15,9 @@ enum LinkType {
 export interface Project {
   title: string;
   details: string;
+  overview: string[];
+  features: string[];
+  challenges: string[];
   techStack: string[];
   IMGURL: string;
   appURL: string;
@@ -63,24 +66,11 @@ export function Project(props: ProjectProps): React.ReactElement {
           ))}
         </div>
       </div>
-      {/* {props.data.image.src && props.data.image.linkTo && (
-                <a href={props.data.image.linkTo} target="_blank" rel="noopener noreferrer" aria-label="External Link">
-                    <GatsbyImage
-                        className={classes.ProjectImageWrapper}
-                        imgClassName={classes.ProjectImage}
-                        image={props.data.image.src.childImageSharp.gatsbyImageData}
-                        alt={props.data.image.alt || `Project ${props.data.title}`}
-                    />
-                </a>
-            )}
-            {props.data.image.src && !props.data.image.linkTo && (
-                <GatsbyImage
-                    className={classes.ProjectImageWrapper}
-                    imgClassName={classes.ProjectImage}
-                    image={props.data.image.src.childImageSharp.gatsbyImageData}
-                    alt={props.data.image.alt || `Project ${props.data.title}`}
-                />
-            )} */}
+      {
+        <a href={props.data.title} target="_blank" rel="noopener noreferrer" aria-label="External Link">
+          <img src={props.data.IMGURL} alt={`${props.data.title}`} />
+        </a>
+      }
     </Animation>
   );
 }
