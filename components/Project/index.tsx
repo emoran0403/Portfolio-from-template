@@ -16,7 +16,7 @@ export interface Project {
   title: string;
   details: string;
   techStack: string[];
-  pageURL: string;
+  IMGURL: string;
   appURL: string;
   gitHubURL: string;
   lab: boolean;
