@@ -5,7 +5,7 @@ import { Page } from "../../components/PageLayoutWithoutFooter";
 export default function IndexPage() {
   return (
     <>
-      <Seo title="Gatsby Starter for Portfolio Minimal" />
+      <Seo title="Eric Moran Portfolio Page" />
       <Page>
         <HeroSection sectionId="hero" />
         <ArticlesSection sectionId="articles" heading="Latest Posts" sources={["Medium"]} />
