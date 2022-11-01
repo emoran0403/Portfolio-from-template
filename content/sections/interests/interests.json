@@ -1,7 +1,7 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "",
       "image": {
         "src": "../../images/joystick.png",
         "alt": ""
@@ -58,8 +58,8 @@
     }
   ],
   "button": {
-    "visible": true,
+    "visible": false,
     "label": "+ Load More",
-    "initiallyShownInterests": 5
+    "initiallyShownInterests": 1
   }
 }

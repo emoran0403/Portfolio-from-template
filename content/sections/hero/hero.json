@@ -10,9 +10,9 @@
   },
   "title": "I'm Eric Moran",
   "subtitle": {
-    "prefix": "some nice tagline ",
-    "highlight": "can go here (hero.json)",
-    "suffix": "."
+    "prefix": "",
+    "highlight": "",
+    "suffix": ""
   },
   "description": "Full-Stack Software Developer - Javascript | Typescript | React | Node | Express | SQL",
   "socialProfiles": {
