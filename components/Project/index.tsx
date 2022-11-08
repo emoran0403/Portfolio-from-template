@@ -70,10 +70,38 @@ export function Project(props: ProjectProps): React.ReactElement {
       {/* <GatsbyImage
         className={classes.ProjectImageWrapper}
         imgClassName={classes.ProjectImage}
-        image={props.data.IMGURL}
+        src={`/${props.data.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
+        image={{
+          layout: "fixed",
+          width: 400,
+          height: 400,
+          images: {
+            sources: [{ media: props.data.IMGURL, srcSet: props.data.IMGURL }],
+          },
+        }}
         alt={`Project ${props.data.title}`}
       /> */}
 
+      <div className={classes.ProjectImageWrapper}>
+        {props.data.title === "Gundam Getter" ? (
+          <iframe
+            id="gundamFrame"
+            className={classes.ProjectImage}
+            width={400}
+            height={400}
+            src="https://www.youtube.com/embed/prFtAVsyJoE"
+            title="YouTube video player"
+          ></iframe>
+        ) : (
+          <img
+            className={classes.ProjectImage}
+            width={400}
+            height={400}
+            alt={`Project ${props.data.title}`}
+            src={`/${props.data.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
+          ></img>
+        )}
+      </div>
       {/* <a href={props.data.IMGURL} target="_blank" rel="noopener noreferrer" aria-label="External Link">
         <img src={props.data.IMGURL} alt={`${props.data.title}`} />
       </a> */}
