@@ -30,7 +30,13 @@ interface ProjectProps {
 const makeLink = (URL: string, text: string) => {
   return (
     <>
-      <a href={URL} target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link">
+      <a
+        className={classes.Profile}
+        href={URL}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        aria-label="External Link"
+      >
         {text}
       </a>
     </>
