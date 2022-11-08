@@ -66,11 +66,17 @@ export function Project(props: ProjectProps): React.ReactElement {
           ))}
         </div>
       </div>
-      {
-        <a href={props.data.title} target="_blank" rel="noopener noreferrer" aria-label="External Link">
-          <img src={props.data.IMGURL} alt={`${props.data.title}`} />
-        </a>
-      }
+
+      {/* <GatsbyImage
+        className={classes.ProjectImageWrapper}
+        imgClassName={classes.ProjectImage}
+        image={props.data.IMGURL}
+        alt={`Project ${props.data.title}`}
+      /> */}
+
+      {/* <a href={props.data.IMGURL} target="_blank" rel="noopener noreferrer" aria-label="External Link">
+        <img src={props.data.IMGURL} alt={`${props.data.title}`} />
+      </a> */}
     </Animation>
   );
 }

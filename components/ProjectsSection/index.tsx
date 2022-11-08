@@ -42,7 +42,7 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
       ],
       details: "IdleScape is a Full-Stack application and my final project for the Covalence bootcamp.",
       techStack: ["MongoDB", "Express", "React", "Redux", "Typescript", "NodeJS"],
-      IMGURL: "/idlegame",
+      IMGURL: "/content/images/IdleScape.png",
       appURL: "https://ejmdev-idlescape.herokuapp.com/",
       gitHubURL: "https://github.com/emoran0403/Idle-Game",
       lab: false,
