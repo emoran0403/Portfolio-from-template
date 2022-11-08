@@ -1,9 +1,6 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { Animation } from "gatsby-theme-portfolio-minimal/src/components/Animation";
-import { Icon } from "gatsby-theme-portfolio-minimal/src/components/Icon";
 import { useMediaQuery } from "gatsby-theme-portfolio-minimal/src/hooks/useMediaQuery";
-import { ImageObject } from "gatsby-theme-portfolio-minimal/src/types";
 // @ts-ignore
 import * as classes from "./style.module.css";
 
@@ -67,21 +64,6 @@ export function Project(props: ProjectProps): React.ReactElement {
         </div>
       </div>
 
-      {/* <GatsbyImage
-        className={classes.ProjectImageWrapper}
-        imgClassName={classes.ProjectImage}
-        src={`/${props.data.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
-        image={{
-          layout: "fixed",
-          width: 400,
-          height: 400,
-          images: {
-            sources: [{ media: props.data.IMGURL, srcSet: props.data.IMGURL }],
-          },
-        }}
-        alt={`Project ${props.data.title}`}
-      /> */}
-
       <div className={classes.ProjectImageWrapper}>
         {props.data.title === "Gundam Getter" ? (
           <iframe
@@ -102,9 +84,6 @@ export function Project(props: ProjectProps): React.ReactElement {
           ></img>
         )}
       </div>
-      {/* <a href={props.data.IMGURL} target="_blank" rel="noopener noreferrer" aria-label="External Link">
-        <img src={props.data.IMGURL} alt={`${props.data.title}`} />
-      </a> */}
     </Animation>
   );
 }

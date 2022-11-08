@@ -1,5 +1,5 @@
 ---
-imageSrc: "../../images/profile-picture.jpg"
+imageSrc: "/static/profile-picture.jpg"
 imageAlt: "Eric Moran Profile Picture"
 ---
 

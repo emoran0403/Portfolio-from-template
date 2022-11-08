@@ -1,4 +1,5 @@
-import { Seo, AboutSection } from "gatsby-theme-portfolio-minimal";
+import { Seo } from "gatsby-theme-portfolio-minimal";
+import { AboutSection } from "../../components/About";
 import React from "react";
 import { Page } from "../../components/PageLayoutWithoutFooter";
 
