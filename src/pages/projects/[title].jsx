@@ -206,12 +206,28 @@ export default function AboutSection(props) {
     return proj.title === props.title;
   });
 
+  const makeLink = (URL, text) => {
+    return (
+      <>
+        <a
+          className={classes.Profile}
+          href={URL}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          aria-label="External Link"
+        >
+          {text}
+        </a>
+      </>
+    );
+  };
+
   return (
     <>
       <Seo title={props?.title} />
       <Page>
         {project && (
-          <Section anchor={props.title} heading={props.title}>
+          <Section anchor={props.title} heading={props.title} appURL={project.appURL} gitHubURL={project.gitHubURL}>
             <div className={classes.About}>
               <div className={classes.Description}>
                 <h1>Overview</h1>
@@ -231,7 +247,24 @@ export default function AboutSection(props) {
               </div>
 
               <div className={classes.ImageWrapper}>
-                <img src="/profile-picture.jpg" alt="wow" className={classes.Image}></img>
+                {props.title === "Gundam Getter" ? (
+                  <iframe
+                    id="gundamFrame"
+                    className={classes.ProjectImage}
+                    width={400}
+                    height={400}
+                    src="https://www.youtube.com/embed/prFtAVsyJoE"
+                    title="YouTube video player"
+                  ></iframe>
+                ) : (
+                  <img
+                    className={classes.ProjectImage}
+                    width={682}
+                    height={682}
+                    alt={`Project ${props.title}`}
+                    src={`/${props.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
+                  ></img>
+                )}
               </div>
             </div>
           </Section>

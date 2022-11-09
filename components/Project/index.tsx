@@ -27,24 +27,24 @@ interface ProjectProps {
   index: number;
 }
 
-const makeLink = (URL: string, text: string) => {
-  return (
-    <>
-      <a
-        className={classes.Profile}
-        href={URL}
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        aria-label="External Link"
-      >
-        {text}
-      </a>
-    </>
-  );
-};
-
 export function Project(props: ProjectProps): React.ReactElement {
   const isDesktopBreakpoint = useMediaQuery("(min-width: 992px)");
+
+  const makeLink = (URL: string, text: string) => {
+    return (
+      <>
+        <a
+          className={classes.Profile}
+          href={URL}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          aria-label="External Link"
+        >
+          {text}
+        </a>
+      </>
+    );
+  };
 
   return (
     <Animation
