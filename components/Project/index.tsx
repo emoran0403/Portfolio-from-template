@@ -84,13 +84,15 @@ export function Project(props: ProjectProps): React.ReactElement {
             title="YouTube video player"
           ></iframe>
         ) : (
-          <img
-            className={classes.ProjectImage}
-            width={400}
-            height={400}
-            alt={`Project ${props.data.title}`}
-            src={`/${props.data.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
-          ></img>
+          <Link to={`/projects/${props.data.title}`}>
+            <img
+              className={classes.ProjectImage}
+              width={400}
+              height={400}
+              alt={`Project ${props.data.title}`}
+              src={`/${props.data.title.toLocaleLowerCase().replace(/\ /g, "")}.png`}
+            ></img>
+          </Link>
         )}
       </div>
     </Animation>
