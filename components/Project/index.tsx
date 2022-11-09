@@ -3,6 +3,7 @@ import { Animation } from "gatsby-theme-portfolio-minimal/src/components/Animati
 import { useMediaQuery } from "gatsby-theme-portfolio-minimal/src/hooks/useMediaQuery";
 // @ts-ignore
 import * as classes from "./style.module.css";
+import { Link } from "gatsby";
 
 enum LinkType {
   External = "external",
@@ -55,7 +56,9 @@ export function Project(props: ProjectProps): React.ReactElement {
       }}
     >
       <div className={classes.Details}>
-        <h4 className={classes.Title}>{props.data.title}</h4>
+        <Link to={`/projects/${props.data.title}`}>
+          <h4 className={classes.Title}>{props.data.title}</h4>
+        </Link>
         <p>{props.data.details}</p>
         <div className={classes.Links}>
           {props.data.appURL && makeLink(props.data.appURL, "Live Site")}
