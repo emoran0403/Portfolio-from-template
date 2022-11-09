@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Animation } from "gatsby-theme-portfolio-minimal/src/components/Animation";
+// import { Animation } from "gatsby-theme-portfolio-minimal/src/components/Animation";
 import { Section } from "gatsby-theme-portfolio-minimal/src/components/Section";
 import { Slider } from "gatsby-theme-portfolio-minimal/src/components/Slider";
 import { Project } from "../Project";
@@ -206,14 +206,14 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
   ]);
 
   return (
-    <Animation type="fadeIn">
-      <Section anchor={props.sectionId} heading={props.heading}>
-        <Slider additionalClasses={[classes.Projects]}>
-          {projects.map((project, key) => (
-            <Project key={key} index={key} data={project} />
-          ))}
-        </Slider>
-      </Section>
-    </Animation>
+    // <Animation type="fadeIn">
+    <Section anchor={props.sectionId} heading={props.heading}>
+      <Slider additionalClasses={[classes.Projects]}>
+        {projects.map((project, key) => (
+          <Project key={key} index={key} data={project} />
+        ))}
+      </Slider>
+    </Section>
+    // </Animation>
   );
 }
